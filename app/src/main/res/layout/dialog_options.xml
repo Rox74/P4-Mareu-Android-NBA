@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!-- Checkbox for filtering by date -->
+    <CheckBox
+        android:id="@+id/checkBoxDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:minHeight="48dp"
+        android:text="@string/filtrer_par_date"
+        android:textSize="16sp"
+        android:contentDescription="@string/checkbox_date_description"/>
+
+    <!-- EditText to select date -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/selectionner_une_date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:minHeight="48dp"/>
+
+    <!-- Checkbox for filtering by location -->
+    <CheckBox
+        android:id="@+id/checkBoxLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:minHeight="48dp"
+        android:text="@string/filtrer_par_lieu"
+        android:textSize="16sp"
+        android:contentDescription="@string/checkbox_location_description"/>
+
+    <!-- Spinner to display locations -->
+    <Spinner
+        android:id="@+id/spinnerLocations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:contentDescription="@string/spinner_locations_description"/>
+
+</LinearLayout>

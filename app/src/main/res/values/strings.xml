@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Maréu</string>
+    <string name="titre_de_la_reunion">Titre de la réunion</string>
+    <string name="lieu_de_la_reunion">Lieu de la réunion</string>
+    <string name="date_et_heure_de_la_reunion">Date et heure de la réunion</string>
+    <string name="sujet_de_la_reunion">Sujet de la réunion</string>
+    <string name="valider">Valider</string>
+    <string name="ajouter_un_participant">Ajouter un participant</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="option">Option de trie des réunions</string>
+    <string name="ma_reu">Ma réu</string>
+    <string name="ajouter_une_reunion">Ajouter une réunion</string>
+    <string name="filtrer_par_date">Filtrer par Date</string>
+    <string name="selectionner_une_date">Sélectionner une date</string>
+    <string name="filtrer_par_lieu">Filtrer par Lieu</string>
+    <string name="details_de_la_reunion">Détails de la réunion</string>
+    <string name="supprimer_la_reunion">Supprimer la réunion</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="banner_description">Titre de l\'application : Ma réu</string>
+    <string name="checkbox_date_description">Case à cocher pour trier par date</string>
+    <string name="checkbox_location_description">Case à cocher pour trier par lieu</string>
+    <string name="spinner_locations_description">Sélectionner un lieu</string>
+    <string name="add_button_description">Bouton pour ajouter le participant renseigné</string>
+    <string name="participants_list_description">Liste des participants de la réunion ajoutée, permet aussi de supprimer des participants</string>
+    <string name="validation_button_description">Bouton pour valider l\'ajout de cette réunion</string>
+    <string name="color_circle_description">Indique si la réunion est proche ou non selon la couleur du cercle</string>
+    <string name="meeting_content_description">Informations sur la réunion</string>
+    <string name="supprimer_participant">Supprimer ce participant</string>
+</resources>

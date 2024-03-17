@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Meeting title input field -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titre_de_la_reunion"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_color"
+            android:importantForAutofill="no" />
+
+        <!-- Meeting location selection field -->
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTitle"
+            android:layout_marginTop="16dp"
+            android:hint="@string/lieu_de_la_reunion"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_color" />
+
+        <!-- Meeting date and time selection field -->
+        <EditText
+            android:id="@+id/editTextDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerLocation"
+            android:layout_marginTop="16dp"
+            android:focusable="false"
+            android:hint="@string/date_et_heure_de_la_reunion"
+            android:inputType="datetime"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_color"
+            android:importantForAutofill="no" />
+
+        <!-- Meeting subject input field -->
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDateTime"
+            android:layout_marginTop="16dp"
+            android:hint="@string/sujet_de_la_reunion"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_color"
+            android:importantForAutofill="no" />
+
+        <!-- Participant input field -->
+        <EditText
+            android:id="@+id/editTextParticipant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextSubject"
+            android:layout_marginTop="16dp"
+            android:hint="@string/ajouter_un_participant"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/hint_color"
+            android:importantForAutofill="no" />
+
+        <!-- Add participant button -->
+        <Button
+            android:id="@+id/btnAddParticipant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextParticipant"
+            android:layout_alignParentEnd="true"
+            android:text="@string/ajouter"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorBanner"
+            android:contentDescription="@string/add_button_description"/>
+
+        <!-- Participants list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/btnAddParticipant"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_background"
+            android:contentDescription="@string/participants_list_description"/>
+
+        <!-- Validation button -->
+        <Button
+            android:id="@+id/btnValidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerViewParticipants"
+            android:layout_marginTop="16dp"
+            android:text="@string/valider"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorBanner"
+            android:contentDescription="@string/validation_button_description"/>
+
+    </RelativeLayout>
+</ScrollView>

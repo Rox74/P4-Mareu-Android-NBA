@@ -1,0 +1,8 @@
+com.lamzone.mareu.application
+com.lamzone.mareu.data_sources
+com.lamzone.mareu.di
+com.lamzone.mareu.model
+com.lamzone.mareu.repository
+com.lamzone.mareu.ui
+com.lamzone.mareu.ui.addmeeting
+com.lamzone.mareu.ui.meetinglist
